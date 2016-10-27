@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "W3ScoolsRemover",
+  "description": "Removes W3Schools from your google search results",
+  "version": "0.0.1",
+
+  "content_scripts":[
+    {
+      "matches" : ["*://www.google.com/search*","*://www.google.nl/search*"],
+      "js" : ["inject.js"],
+      "run_at" : "document_end"
+    }
+  ]
+}
